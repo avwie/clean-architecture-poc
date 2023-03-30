@@ -5,14 +5,6 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@avwie/applications-cli@workspace:packages/applications/cli":
-  version: 0.0.0-use.local
-  resolution: "@avwie/applications-cli@workspace:packages/applications/cli"
-  dependencies:
-    "@avwie/features-soundfiles": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
 "@avwie/clean-architecture-poc@workspace:.":
   version: 0.0.0-use.local
   resolution: "@avwie/clean-architecture-poc@workspace:."
@@ -22,7 +14,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@avwie/features-soundfiles@workspace:*, @avwie/features-soundfiles@workspace:packages/features/soundfiles":
+"@avwie/features-soundfiles@workspace:packages/features/soundfiles":
   version: 0.0.0-use.local
   resolution: "@avwie/features-soundfiles@workspace:packages/features/soundfiles"
   dependencies:
