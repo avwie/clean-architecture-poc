@@ -1,0 +1,12 @@
+{
+  "name": "@avwie/features-soundfiles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn run package:build"
+  },
+  "dependencies": {
+    "@avwie/libraries-soundaware": "workspace:*"
+  }
+}

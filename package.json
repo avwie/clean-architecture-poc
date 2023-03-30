@@ -1,0 +1,31 @@
+{
+  "name": "@avwie/clean-architecture-poc",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": {
+    "packages": [
+      "**"
+    ]
+  },
+  "scripts": {
+    "build": "yarn workspaces foreach -v --topological run package:build",
+    "package:build": "cd $INIT_CWD && rimraf dist && tsc",
+    "run:applications:cli": "yarn workspace @avwie/applications-cli run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avwie/clean-architecture-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avwie/clean-architecture-poc/issues"
+  },
+  "homepage": "https://github.com/avwie/clean-architecture-poc#readme",
+  "packageManager": "yarn@3.5.0",
+  "devDependencies": {
+    "rimraf": "^4.4.1",
+    "typescript": "^5.0.2"
+  }
+}
