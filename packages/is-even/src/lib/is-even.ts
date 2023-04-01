@@ -1,3 +1,3 @@
-export function isEven(): string {
-  return 'is-even';
+export function isEven(x: number): boolean {
+  return x % 2 === 0;
 }
