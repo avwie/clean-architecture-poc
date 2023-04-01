@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@avwie/is-even": ["packages/is-even/src/index.ts"]
+      "@clean-architecture-poc/libraries/is-even": [
+        "packages/libraries/is-even/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

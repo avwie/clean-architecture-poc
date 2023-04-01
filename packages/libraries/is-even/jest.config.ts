@@ -1,10 +1,10 @@
 /* eslint-disable */
 export default {
-  displayName: 'is-even',
-  preset: '../../jest.preset.js',
+  displayName: 'libraries-is-even',
+  preset: '../../../jest.preset.js',
   transform: {
     '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/packages/is-even',
+  coverageDirectory: '../../../coverage/packages/libraries/is-even',
 };
