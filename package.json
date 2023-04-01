@@ -9,8 +9,8 @@
     ]
   },
   "scripts": {
-    "build": "yarn workspaces foreach -v --topological run package:build",
-    "package:build": "cd $INIT_CWD && rimraf dist && tsc"
+    "build": "yarn workspaces foreach -v --topological run build",
+    ":root:build": "cd $INIT_CWD && rimraf dist && tsc"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
     "url": "https://github.com/avwie/clean-architecture-poc/issues"
   },
   "homepage": "https://github.com/avwie/clean-architecture-poc#readme",
-  "packageManager": "yarn@3.5.0",
+  "packageManager": "yarn@4.0.0-rc.42",
   "devDependencies": {
     "rimraf": "^4.4.1",
     "typescript": "^5.0.2"

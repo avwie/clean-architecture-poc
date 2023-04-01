@@ -1,3 +1,1 @@
-export const sayHello = (name: string) => {
-    console.log(`Hello ${name}`)
-}
+export * as hello from './say-hello';

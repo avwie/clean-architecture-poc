@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn run package:build"
+    "build": "yarn :root:build"
   },
   "dependencies": {
     "@avwie/libraries-soundaware": "workspace:*"
