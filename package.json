@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "yarn workspaces foreach -v --topological run build",
-    ":root:build": "cd $INIT_CWD && rimraf dist && tsc"
+    ":packages:build": "cd $INIT_CWD && rimraf dist && tsc"
   },
   "repository": {
     "type": "git",

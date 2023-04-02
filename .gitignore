@@ -7,8 +7,5 @@
 !.yarn/sdks
 !.yarn/versions
 
-# IDE's
-.vscode
-
 # Builds
 dist

@@ -14,17 +14,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@avwie/features-soundfiles@workspace:packages/features/soundfiles":
+"@avwie/is-even@workspace:packages/libraries/is-even":
   version: 0.0.0-use.local
-  resolution: "@avwie/features-soundfiles@workspace:packages/features/soundfiles"
-  dependencies:
-    "@avwie/libraries-soundaware": "workspace:*"
+  resolution: "@avwie/is-even@workspace:packages/libraries/is-even"
   languageName: unknown
   linkType: soft
 
-"@avwie/libraries-soundaware@workspace:*, @avwie/libraries-soundaware@workspace:packages/libraries/soundaware":
+"@avwie/is-odd@workspace:packages/libraries/is-odd":
   version: 0.0.0-use.local
-  resolution: "@avwie/libraries-soundaware@workspace:packages/libraries/soundaware"
+  resolution: "@avwie/is-odd@workspace:packages/libraries/is-odd"
   languageName: unknown
   linkType: soft
 
