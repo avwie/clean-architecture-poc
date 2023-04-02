@@ -14,7 +14,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@avwie/is-even@workspace:packages/libraries/is-even":
+"@avwie/is-even@workspace:*, @avwie/is-even@workspace:packages/libraries/is-even":
   version: 0.0.0-use.local
   resolution: "@avwie/is-even@workspace:packages/libraries/is-even"
   languageName: unknown
@@ -23,6 +23,8 @@ __metadata:
 "@avwie/is-odd@workspace:packages/libraries/is-odd":
   version: 0.0.0-use.local
   resolution: "@avwie/is-odd@workspace:packages/libraries/is-odd"
+  dependencies:
+    "@avwie/is-even": "workspace:*"
   languageName: unknown
   linkType: soft
 

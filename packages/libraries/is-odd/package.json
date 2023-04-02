@@ -4,5 +4,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "yarn :packages:build"
+  },
+  "dependencies": {
+    "@avwie/is-even": "workspace:*"
   }
 }
