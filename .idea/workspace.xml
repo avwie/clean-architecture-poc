@@ -5,23 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2650504a-12a8-4578-bf7b-4ab39133dd17" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/libraries/is-even/jest.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/libraries/is-even/tsconfig.spec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/releases/yarn-4.0.0-rc.42.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-even/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/index.d.ts.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.d.ts.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-even/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-odd/src/is-odd.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-odd/src/is-odd.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +96,7 @@
       <workItem from="1680451859857" duration="51000" />
       <workItem from="1680451912764" duration="121000" />
       <workItem from="1680452035812" duration="187000" />
-      <workItem from="1680452224744" duration="1268000" />
+      <workItem from="1680452224744" duration="1567000" />
     </task>
     <servers />
   </component>
