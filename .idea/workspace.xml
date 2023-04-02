@@ -5,9 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2650504a-12a8-4578-bf7b-4ab39133dd17" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/libraries/is-even/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/libraries/is-even/tsconfig.spec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-odd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-odd/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-odd/src/is-odd.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-odd/src/is-odd.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/releases/yarn-4.0.0-rc.42.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-even/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/index.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-even/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,24 +37,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/avanwieringen/Development/private/nodejs/clean-architecture-poc/packages/libraries/is-odd&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;yarn:package.json:typescript&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/avanwieringen/Development/private/nodejs/clean-architecture-poc/packages/libraries/is-odd",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "yarn:packages/libraries/is-even/package.json:jest",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "yarn:package.json:typescript",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/libraries/is-odd" />
     </key>
+  </component>
+  <component name="RunManager" selected="Jest.isEven">
+    <configuration name="isEven" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="yarn:package.json:jest" />
+      <working-dir value="$PROJECT_DIR$/packages/libraries/is-even" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.spec.ts" />
+      <test-names>
+        <test-name value="isEven" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="isEven.should return true if the number is even" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="yarn:packages/libraries/is-even/package.json:jest" />
+      <working-dir value="$PROJECT_DIR$/packages/libraries/is-even" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.spec.ts" />
+      <test-names>
+        <test-name value="isEven" />
+        <test-name value="should return true if the number is even" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.isEven" />
+        <item itemvalue="Jest.isEven.should return true if the number is even" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -53,22 +103,17 @@
       <workItem from="1680425612822" duration="78000" />
       <workItem from="1680425980631" duration="457000" />
       <workItem from="1680426498944" duration="2382000" />
+      <workItem from="1680439292011" duration="796000" />
+      <workItem from="1680451462793" duration="177000" />
+      <workItem from="1680451641716" duration="216000" />
+      <workItem from="1680451859857" duration="51000" />
+      <workItem from="1680451912764" duration="121000" />
+      <workItem from="1680452035812" duration="187000" />
+      <workItem from="1680452224744" duration="1268000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/packages/libraries/is-even/src/index.js" />
-        <option value="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.d.ts.map" />
-        <option value="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.js.map" />
-        <option value="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.d.ts" />
-        <option value="$PROJECT_DIR$/packages/libraries/is-even/src/index.d.ts" />
-        <option value="$PROJECT_DIR$/packages/libraries/is-even/src/index.js.map" />
-        <option value="$PROJECT_DIR$/packages/libraries/is-even/src/index.d.ts.map" />
-        <option value="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.js" />
-      </list>
-    </option>
   </component>
 </project>
