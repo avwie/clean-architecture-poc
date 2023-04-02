@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2650504a-12a8-4578-bf7b-4ab39133dd17" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/libraries/is-odd/src/is-odd.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/libraries/is-odd/src/is-odd.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-odd/src/is-odd.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-even/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-even/src/is-even.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/libraries/is-odd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/libraries/is-odd/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,21 +28,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/avanwieringen/Development/private/nodejs/clean-architecture-poc/packages/libraries/is-odd",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "yarn:packages/libraries/is-even/package.json:jest",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "yarn:package.json:typescript",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/avanwieringen/Development/private/nodejs/clean-architecture-poc/packages/libraries/is-odd&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;yarn:packages/libraries/is-even/package.json:jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;yarn:package.json:typescript&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/libraries/is-odd" />
@@ -96,7 +100,7 @@
       <workItem from="1680451859857" duration="51000" />
       <workItem from="1680451912764" duration="121000" />
       <workItem from="1680452035812" duration="187000" />
-      <workItem from="1680452224744" duration="1567000" />
+      <workItem from="1680452224744" duration="2353000" />
     </task>
     <servers />
   </component>

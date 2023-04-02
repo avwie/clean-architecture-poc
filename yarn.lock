@@ -48,6 +48,9 @@ __metadata:
   resolution: "@avwie/is-odd@workspace:packages/libraries/is-odd"
   dependencies:
     "@avwie/is-even": "workspace:*"
+    "@types/jest": ^29.5.0
+    jest: ^29.5.0
+    ts-jest: ^29.1.0
   languageName: unknown
   linkType: soft
 

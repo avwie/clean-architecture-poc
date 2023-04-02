@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "yarn workspaces foreach -v --topological run build",
-    "test": "jest",
+    "test": "jest --verbose --runInBand",
     ":packages:build": "cd $INIT_CWD && rimraf dist && tsc"
   },
   "repository": {
