@@ -9,9 +9,8 @@
     ]
   },
   "scripts": {
-    "build": "yarn workspaces foreach -v --topological run build",
-    "test": "jest --verbose --runInBand",
-    ":packages:build": "cd $INIT_CWD && rimraf dist && tsc"
+    "build": "pnpm run -r build",
+    "test": "jest --verbose --runInBand"
   },
   "repository": {
     "type": "git",
