@@ -21,6 +21,7 @@ __metadata:
   dependencies:
     "@types/jest": ^29.5.0
     "@typescript-eslint/eslint-plugin": ^5.43.0
+    "@typescript-eslint/parser": ^5.57.0
     eslint: ^8.0.1
     eslint-config-standard-with-typescript: latest
     eslint-plugin-import: ^2.25.2
@@ -29,7 +30,7 @@ __metadata:
     jest: ^29.5.0
     rimraf: ^4.4.1
     ts-jest: ^29.1.0
-    typescript: "*"
+    typescript: 5.0.3
   languageName: unknown
   linkType: soft
 
@@ -40,6 +41,7 @@ __metadata:
     "@types/jest": ^29.5.0
     jest: ^29.5.0
     ts-jest: ^29.1.0
+    typescript: 5.0.3
   languageName: unknown
   linkType: soft
 
@@ -51,6 +53,7 @@ __metadata:
     "@types/jest": ^29.5.0
     jest: ^29.5.0
     ts-jest: ^29.1.0
+    typescript: 5.0.3
   languageName: unknown
   linkType: soft
 
@@ -1071,7 +1074,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.43.0":
+"@typescript-eslint/parser@npm:^5.43.0, @typescript-eslint/parser@npm:^5.57.0":
   version: 5.57.0
   resolution: "@typescript-eslint/parser@npm:5.57.0"
   dependencies:
@@ -4993,7 +4996,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:*":
+"typescript@npm:5.0.3":
   version: 5.0.3
   resolution: "typescript@npm:5.0.3"
   bin:
@@ -5003,7 +5006,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@*#~builtin<compat/typescript>":
+"typescript@patch:typescript@5.0.3#~builtin<compat/typescript>":
   version: 5.0.3
   resolution: "typescript@patch:typescript@npm%3A5.0.3#~builtin<compat/typescript>::version=5.0.3&hash=85af82"
   bin:
