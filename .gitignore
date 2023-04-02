@@ -6,3 +6,6 @@ dist
 
 # IDE
 .idea
+
+# Other stuff
+.DS_Store
