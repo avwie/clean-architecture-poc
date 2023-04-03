@@ -10,7 +10,14 @@
   },
   "scripts": {
     "build": "pnpm run -r build",
-    "test": "jest --verbose --runInBand"
+    "test": "jest --verbose --runInBand",
+
+    "docker:build:workspace": "docker build --file ./deployment/docker/workspace.Dockerfile -t avwie/clean-architecture-poc:workspace .",
+    "docker:build:web-server": "docker build --file ./deployment/docker/app.Dockerfile -t avwie/clean-architecture-poc:app .",
+
+    "docker:start:web-server": "docker run --detach --publish 8080:8080 --name avwie_web-server avwie/clean-architecture-poc:app",
+    "docker:stop:web-server": "docker stop avwie_web-server",
+    "docker:remove:web-server": "docker rm avwie_web-server"
   },
   "repository": {
     "type": "git",
@@ -22,7 +29,7 @@
     "url": "https://github.com/avwie/clean-architecture-poc/issues"
   },
   "homepage": "https://github.com/avwie/clean-architecture-poc#readme",
-  "packageManager": "yarn@3.5.0",
+  "packageManager": "pnpm@7.30.3",
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/jest": "^29.5.0",

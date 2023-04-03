@@ -1,6 +1,7 @@
 import express, { type Express, type Request, type Response } from 'express'
+
 import { isEven } from '@avwie/is-even'
-import { isOdd } from '@avwie/is-odd/dist/is-odd'
+import { isOdd } from '@avwie/is-odd'
 
 const app: Express = express()
 const port = 8080
