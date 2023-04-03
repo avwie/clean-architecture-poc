@@ -7,8 +7,5 @@
   "scripts": {
     "build": "rimraf dist && tsc",
     "test": "jest --verbose --runInBand"
-  },
-  "dependencies": {
-    "cowsay": "*"
   }
 }
