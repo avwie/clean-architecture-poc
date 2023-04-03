@@ -1,10 +1,14 @@
 {
   "name": "@avwie/is-even",
+  "version": "1.0.0",
   "license": "ISC",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rimraf dist && tsc",
     "test": "jest --verbose --runInBand"
+  },
+  "dependencies": {
+    "cowsay": "*"
   }
 }
