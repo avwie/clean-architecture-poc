@@ -10,7 +10,8 @@
   },
   "scripts": {
     "build": "pnpm run -r build",
-    "test": "jest --verbose --runInBand"
+    "test": "jest --verbose --runInBand",
+    "lint": "eslint ./packages/**/src/**/*.ts --fix"
   },
   "repository": {
     "type": "git",

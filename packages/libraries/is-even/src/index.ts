@@ -1,1 +1,1 @@
-export * from './is-even';
+export * from './is-even'
