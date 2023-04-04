@@ -15,8 +15,8 @@
 
 ## Setup Docker
 
-- run `docker:build:workspace` to build the workspace image, as a basis for the apps images
-- run `docker:build:web-server` to build the web server image
-- run `docker:run:web-server` to run the web server image
-- run `docker:stop:web-server` to stop the web server image
-- run `docker:remove:web-server` to remove the web server image
+- run `pnpm run --filter @avwie/deployment docker:build:workspace` to build the workspace image, as a basis for the apps images
+- run `pnpm run --filter @avwie/deployment docker:build:web-server` to build the web server image
+- run `pnpm run --filter @avwie/deployment docker:run:web-server` to run the web server image
+- run `pnpm run --filter @avwie/deployment docker:stop:web-server` to stop the web server image
+- run `pnpm run --filter @avwie/deployment docker:remove:web-server` to remove the web server image

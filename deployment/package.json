@@ -1,0 +1,16 @@
+{
+  "name": "@avwie/deployment",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "docker:build:workspace": "docker build --file ./docker/workspace.Dockerfile -t avwie/clean-architecture-poc:workspace ../",
+    "docker:build:web-server": "docker build --file ./docker/app.Dockerfile -t avwie/clean-architecture-poc:web-server ../",
+
+    "docker:start:web-server": "docker run --detach --publish 8080:8080 --name avwie_web-server avwie/clean-architecture-poc:web-server",
+    "docker:stop:web-server": "docker stop avwie_web-server",
+    "docker:remove:web-server": "docker rm avwie_web-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

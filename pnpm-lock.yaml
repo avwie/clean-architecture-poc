@@ -34,6 +34,9 @@ importers:
       ts-jest: 29.1.0_ntm4xngu7em45lqojwsg6ufzc4
       typescript: 5.0.3
 
+  deployment:
+    specifiers: {}
+
   packages/apps/web-server:
     specifiers:
       '@avwie/is-even': workspace:*
