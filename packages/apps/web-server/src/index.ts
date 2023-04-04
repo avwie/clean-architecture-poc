@@ -1,25 +1,9 @@
-import express, { type Express, type Request, type Response } from 'express'
+import { NestFactory } from '@nestjs/core'
+import { AppModule } from './app.module'
 
-import { isEven } from '@avwie/is-even'
-import { isOdd } from '@avwie/is-odd'
+async function bootstrap (): Promise<void> {
+  const app = await NestFactory.create(AppModule)
+  await app.listen(3000)
+}
 
-const app: Express = express()
-const port = 8080
-
-app.get('/', (req: Request, res: Response) => {
-  res.send('Express + TypeScript Server')
-})
-
-app.get('/is-even/:number', (req: Request, res: Response) => {
-  const number = parseInt(req.params.number, 10)
-  res.send(`${number} is ${isEven(number) ? 'even' : 'odd'}`)
-})
-
-app.get('/is-odd/:number', (req: Request, res: Response) => {
-  const number = parseInt(req.params.number, 10)
-  res.send(`${number} is ${isOdd(number) ? 'odd' : 'even'}`)
-})
-
-app.listen(port, () => {
-  console.log(`⚡️[server]: Server is running at http://localhost:${port}`)
-})
+void bootstrap()

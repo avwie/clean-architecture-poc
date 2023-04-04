@@ -39,7 +39,7 @@ importers:
   deployment:
     specifiers: {}
 
-  packages/apps/nest-server:
+  packages/apps/web-server:
     specifiers:
       '@nestjs/cli': ^9.0.0
       '@nestjs/common': ^9.0.0
@@ -61,25 +61,12 @@ importers:
       rxjs: 7.8.0
     devDependencies:
       '@nestjs/cli': 9.3.0
-      '@nestjs/schematics': 9.1.0_typescript@4.9.5
+      '@nestjs/schematics': 9.1.0_typescript@5.0.3
       '@nestjs/testing': 9.3.12_ckvy3xuqd5ydy3ipiq7jufha44
       '@types/express': 4.17.17
       '@types/node': 18.15.11
-      typescript: 4.9.5
+      typescript: 5.0.3
       webpack: 5.77.0
-
-  packages/apps/web-server:
-    specifiers:
-      '@avwie/is-even': workspace:*
-      '@avwie/is-odd': workspace:*
-      '@types/express': '*'
-      express: '*'
-    dependencies:
-      '@avwie/is-even': link:../../libraries/is-even
-      '@avwie/is-odd': link:../../libraries/is-odd
-      express: 4.18.2
-    devDependencies:
-      '@types/express': 4.17.17
 
   packages/libraries/is-even:
     specifiers: {}
@@ -966,7 +953,7 @@ packages:
       - chokidar
     dev: true
 
-  /@nestjs/schematics/9.1.0_typescript@4.9.5:
+  /@nestjs/schematics/9.1.0_typescript@5.0.3:
     resolution: {integrity: sha512-/7CyMTnPJSK9/xD9CkCqwuHPOlHVlLC2RDnbdCJ7mIO07SdbBbY14msTqtYW9VRQtsjZPLh1GTChf7ryJUImwA==}
     peerDependencies:
       typescript: '>=4.3.5'
@@ -975,7 +962,7 @@ packages:
       '@angular-devkit/schematics': 15.2.4
       jsonc-parser: 3.2.0
       pluralize: 8.0.0
-      typescript: 4.9.5
+      typescript: 5.0.3
     transitivePeerDependencies:
       - chokidar
     dev: true

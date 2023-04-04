@@ -1,8 +1,7 @@
 {
   "extends": "../tsconfig.apps.json",
-  "include": ["src/**/*.ts"],
-  "exclude": ["jest.config.js", "src/**/*.spec.ts", "src/**/*.test.ts"],
   "compilerOptions": {
-    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist"
   }
 }
