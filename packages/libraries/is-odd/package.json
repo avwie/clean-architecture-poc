@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc --project tsconfig.build.json",
     "test": "jest --verbose --runInBand"
   },
   "dependencies": {
