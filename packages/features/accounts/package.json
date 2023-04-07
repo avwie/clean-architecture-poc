@@ -9,11 +9,8 @@
     "@nestjs/common": "*",
     "@avwie/decorators": "workspace:*",
     "uuid": "*",
-    "sequelize": "*",
     "sequelize-typescript": "*",
-    "@nestjs/sequelize": "*",
-    "pg": "*",
-    "pg-hstore": "*"
+    "@nestjs/sequelize": "*"
   },
   "scripts": {
     "build": "rimraf dist && tsc --project tsconfig.build.json",

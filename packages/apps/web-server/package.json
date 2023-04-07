@@ -15,8 +15,14 @@
     "@nestjs/common": "*",
     "@nestjs/core": "*",
     "@nestjs/platform-express": "*",
+    "@avwie/accounts": "workspace:*",
     "reflect-metadata": "*",
-    "rxjs": "*"
+    "rxjs": "*",
+    "sequelize": "*",
+    "sequelize-typescript": "*",
+    "@nestjs/sequelize": "*",
+    "pg": "*",
+    "pg-hstore": "*"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",

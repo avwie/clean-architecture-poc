@@ -1,7 +1,7 @@
 import { type Account } from '../types'
 import { Column, Model, Table, PrimaryKey, CreatedAt, UpdatedAt } from 'sequelize-typescript'
 
-@Table
+@Table({ tableName: 'accounts' })
 export class AccountModel extends Model implements Account {
   @PrimaryKey
   @Column
