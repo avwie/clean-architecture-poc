@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common'
-import { AppController } from './app.controller'
-import { AppService } from './app.service'
+import { RouterModule } from '@nestjs/core'
 import { SequelizeModule } from '@nestjs/sequelize'
+import { routes } from './app.routes'
 import { AccountModule } from '@avwie/accounts/dist/modules'
 
 @Module({
@@ -15,9 +15,8 @@ import { AccountModule } from '@avwie/accounts/dist/modules'
       database: 'postgres',
       autoLoadModels: true
     }),
+    RouterModule.register(routes),
     AccountModule
-  ],
-  controllers: [AppController],
-  providers: [AppService]
+  ]
 })
 export class AppModule {}
