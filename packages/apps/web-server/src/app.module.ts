@@ -2,7 +2,8 @@ import { Module } from '@nestjs/common'
 import { RouterModule } from '@nestjs/core'
 import { SequelizeModule } from '@nestjs/sequelize'
 import { routes } from './app.routes'
-import { AccountModule } from '@avwie/accounts/dist/modules'
+import { AccountsModule } from '@avwie/accounts/dist/modules'
+import { TransactionsModule } from '@avwie/transactions/dist/modules'
 
 @Module({
   imports: [
@@ -16,7 +17,8 @@ import { AccountModule } from '@avwie/accounts/dist/modules'
       autoLoadModels: true
     }),
     RouterModule.register(routes),
-    AccountModule
+    AccountsModule,
+    TransactionsModule
   ]
 })
 export class AppModule {}

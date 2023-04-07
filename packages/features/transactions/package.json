@@ -1,16 +1,21 @@
 {
-  "name": "@avwie/decorators",
+  "name": "@avwie/transactions",
   "private": true,
   "version": "1.0.0",
   "license": "ISC",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "dependencies": {
-    "@nestjs/common": "*"
-  },
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
     "clean": "rimraf dist",
     "test": "jest --verbose --runInBand"
+  },
+  "dependencies": {
+    "@nestjs/common": "*",
+    "@avwie/decorators": "workspace:*",
+    "uuid": "*",
+    "sequelize-typescript": "*",
+    "@nestjs/sequelize": "*",
+    "@avwie/accounts": "workspace:*"
   }
 }

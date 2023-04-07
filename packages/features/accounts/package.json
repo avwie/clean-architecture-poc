@@ -5,15 +5,16 @@
   "license": "ISC",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "clean": "rimraf dist",
+    "test": "jest --verbose --runInBand"
+  },
   "dependencies": {
     "@nestjs/common": "*",
     "@avwie/decorators": "workspace:*",
     "uuid": "*",
     "sequelize-typescript": "*",
     "@nestjs/sequelize": "*"
-  },
-  "scripts": {
-    "build": "rimraf dist && tsc --project tsconfig.build.json",
-    "test": "jest --verbose --runInBand"
   }
 }

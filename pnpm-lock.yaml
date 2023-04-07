@@ -97,6 +97,9 @@ importers:
       '@avwie/accounts':
         specifier: workspace:*
         version: link:../../features/accounts
+      '@avwie/transactions':
+        specifier: workspace:*
+        version: link:../../features/transactions
       '@nestjs/common':
         specifier: '*'
         version: 9.3.12(reflect-metadata@0.1.13)(rxjs@7.8.0)
@@ -152,6 +155,27 @@ importers:
 
   packages/features/accounts:
     dependencies:
+      '@avwie/decorators':
+        specifier: workspace:*
+        version: link:../../libraries/decorators
+      '@nestjs/common':
+        specifier: '*'
+        version: 9.3.12(reflect-metadata@0.1.13)(rxjs@7.8.0)
+      '@nestjs/sequelize':
+        specifier: '*'
+        version: 9.0.2(@nestjs/common@9.3.12)(@nestjs/core@9.3.12)(reflect-metadata@0.1.13)(rxjs@7.8.0)(sequelize-typescript@2.1.5)(sequelize@6.30.0)
+      sequelize-typescript:
+        specifier: '*'
+        version: 2.1.5(@types/node@18.15.11)(@types/validator@13.7.14)(reflect-metadata@0.1.13)(sequelize@6.30.0)
+      uuid:
+        specifier: '*'
+        version: 9.0.0
+
+  packages/features/transactions:
+    dependencies:
+      '@avwie/accounts':
+        specifier: workspace:*
+        version: link:../accounts
       '@avwie/decorators':
         specifier: workspace:*
         version: link:../../libraries/decorators

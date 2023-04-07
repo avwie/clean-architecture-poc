@@ -7,10 +7,10 @@ export class AccountModel extends Model implements Account {
   @Column
     id!: string
 
-  @Column({ field: 'name' })
+  @Column({ field: 'name', allowNull: false })
     name!: string
 
-  @Column({ field: 'starting_balance' })
+  @Column({ field: 'starting_balance', allowNull: false })
     startingBalance!: number
 
   @CreatedAt

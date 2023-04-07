@@ -10,6 +10,6 @@ import * as controllers from '../controllers'
   controllers: Object.values(controllers),
   exports: Object.values(useCases)
 })
-export class AccountModule {
+export class AccountsModule {
   static models = Object.values(models)
 }

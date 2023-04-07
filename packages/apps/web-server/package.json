@@ -6,7 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "rimraf dist && nest build",
+    "build": "nest build",
+    "clean": "rimraf dist",
     "dev": "nest start --watch --debug",
     "start": "node dist/index.js",
     "test": "jest --verbose --runInBand"
@@ -16,6 +17,7 @@
     "@nestjs/core": "*",
     "@nestjs/platform-express": "*",
     "@avwie/accounts": "workspace:*",
+    "@avwie/transactions": "workspace:*",
     "reflect-metadata": "*",
     "rxjs": "*",
     "sequelize": "*",
