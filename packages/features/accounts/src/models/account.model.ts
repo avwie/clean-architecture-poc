@@ -1,5 +1,5 @@
 import { type Account } from '../types'
-import { Column, Model, Table, PrimaryKey, CreatedAt, UpdatedAt, DeletedAt } from 'sequelize-typescript'
+import { Column, Model, Table, PrimaryKey, CreatedAt, UpdatedAt } from 'sequelize-typescript'
 
 @Table
 export class AccountModel extends Model implements Account {
