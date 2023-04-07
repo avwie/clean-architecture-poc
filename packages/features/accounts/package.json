@@ -7,7 +7,11 @@
   "types": "dist/index.d.ts",
   "dependencies": {
     "@nestjs/common": "*",
-    "@avwie/decorators": "workspace:*"
+    "@avwie/decorators": "workspace:*",
+    "@mikro-orm/core": "*",
+    "@mikro-orm/nestjs": "*",
+    "@mikro-orm/postgresql": "*",
+    "uuid": "*"
   },
   "scripts": {
     "build": "rimraf dist && tsc --project tsconfig.build.json",
