@@ -1,15 +1,17 @@
-import { UseCase } from '@avwie/decorators/src'
-import { AccountRepository } from '../repositories'
+import { UseCase } from '@avwie/decorators/dist'
 import { type Account } from '../types'
-import { type AccountEntity } from '../entities'
+import { AccountModel } from '../models'
+import { InjectModel } from '@nestjs/sequelize'
+import { v4 as uuid } from 'uuid'
 
 @UseCase()
 export class AddAccountUseCase {
-  constructor (private readonly accountsRepository: AccountRepository) {}
+  constructor (@InjectModel(AccountModel) private readonly accountModel: typeof AccountModel) {}
 
-  async invoke (account: Omit<Account, 'id'>): Promise<AccountEntity> {
-    const entity = this.accountsRepository.create(account)
-    await this.accountsRepository.flush()
-    return entity
+  async invoke (input: Omit<Account, 'id'>): Promise<Account> {
+    return await this.accountModel.create({
+      id: uuid(),
+      ...input
+    })
   }
 }

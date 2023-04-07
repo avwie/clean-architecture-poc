@@ -8,10 +8,12 @@
   "dependencies": {
     "@nestjs/common": "*",
     "@avwie/decorators": "workspace:*",
-    "@mikro-orm/core": "*",
-    "@mikro-orm/nestjs": "*",
-    "@mikro-orm/postgresql": "*",
-    "uuid": "*"
+    "uuid": "*",
+    "sequelize": "*",
+    "sequelize-typescript": "*",
+    "@nestjs/sequelize": "*",
+    "pg": "*",
+    "pg-hstore": "*"
   },
   "scripts": {
     "build": "rimraf dist && tsc --project tsconfig.build.json",

@@ -1,16 +1,12 @@
-import { UseCase } from '@avwie/decorators/src'
-import { AccountRepository } from '../repositories'
+import { UseCase } from '@avwie/decorators/dist'
+import { AccountModel } from '../models'
+import { InjectModel } from '@nestjs/sequelize'
 
 @UseCase()
 export class RemoveAccountUseCase {
-  constructor (private readonly accountsRepository: AccountRepository) {}
+  constructor (@InjectModel(AccountModel) private readonly accountModel: typeof AccountModel) {}
 
-  async invoke (id: string): Promise<void> {
-    const entity = await this.accountsRepository.findOne(id)
-    if (entity == null) {
-      throw new Error(`Account with id ${id} not found`)
-    }
-    this.accountsRepository.remove(entity)
-    await this.accountsRepository.flush()
+  async invoke (id: string): Promise<number> {
+    return await this.accountModel.destroy({ where: { id } })
   }
 }
