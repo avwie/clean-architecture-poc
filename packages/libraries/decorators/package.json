@@ -1,9 +1,13 @@
 {
-  "name": "@avwie/is-even",
+  "name": "@avwie/decorators",
+  "private": true,
   "version": "1.0.0",
   "license": "ISC",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "dependencies": {
+    "@nestjs/common": "*"
+  },
   "scripts": {
     "build": "rimraf dist && tsc --project tsconfig.build.json",
     "test": "jest --verbose --runInBand"

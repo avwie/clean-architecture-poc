@@ -1,13 +1,16 @@
 {
-  "name": "@avwie/is-odd",
+  "name": "@avwie/accounts",
+  "private": true,
+  "version": "1.0.0",
   "license": "ISC",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "dependencies": {
+    "@nestjs/common": "*",
+    "@avwie/decorators": "workspace:*"
+  },
   "scripts": {
     "build": "rimraf dist && tsc --project tsconfig.build.json",
     "test": "jest --verbose --runInBand"
-  },
-  "dependencies": {
-    "@avwie/is-even": "workspace:*"
   }
 }
