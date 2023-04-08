@@ -6,9 +6,9 @@ import * as controllers from '../controllers'
 
 @Module({
   imports: [SequelizeModule.forFeature(Object.values(models))],
-  providers: Object.values(useCases),
+  providers: Object.values(useCases.providers),
   controllers: Object.values(controllers),
-  exports: Object.values(useCases)
+  exports: Object.values(useCases.providers)
 })
 export class AccountsModule {
   static models = Object.values(models)

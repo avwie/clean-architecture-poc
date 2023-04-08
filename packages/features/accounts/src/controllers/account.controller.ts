@@ -1,18 +1,19 @@
 import { Body, Controller, Delete, Post } from '@nestjs/common'
-import { CreateAccountUseCase, RemoveAccountUseCase } from '../usecases'
+import { CreateAccount, CreateAccountUseCase, RemoveAccountUseCase } from '../usecases'
 import { type Account } from '../types'
+import { InjectUseCase } from '@avwie/architecture'
 
 @Controller('account')
 export class AccountController {
   constructor (
-    private readonly createAccountUseCase: CreateAccountUseCase,
+    @InjectUseCase(CreateAccount) private readonly createAccount: CreateAccountUseCase,
     private readonly removeAccountUseCase: RemoveAccountUseCase
   ) {
   }
 
   @Post()
   async addAccount (@Body() account: Account): Promise<Account> {
-    return await this.createAccountUseCase.invoke(account)
+    return await this.createAccount(account)
   }
 
   @Delete()

@@ -1,9 +1,9 @@
-import { UseCase } from '@avwie/decorators/dist'
 import { AccountModel } from '../models'
 import { InjectModel } from '@nestjs/sequelize'
 import { type Account } from '../types'
+import { Injectable } from '@nestjs/common'
 
-@UseCase()
+@Injectable()
 export class RemoveAccountUseCase {
   constructor (@InjectModel(AccountModel) private readonly accountModel: typeof AccountModel) {}
 
