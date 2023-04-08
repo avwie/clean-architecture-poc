@@ -1,4 +1,4 @@
-import { UseCase } from '@avwie/decorators'
+import { UseCase } from '@avwie/architecture'
 import { InjectModel } from '@nestjs/sequelize'
 import { AccountModel } from '../models'
 import { type Account } from '../types'

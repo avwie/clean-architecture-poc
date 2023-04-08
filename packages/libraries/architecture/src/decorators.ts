@@ -3,7 +3,3 @@ import { Injectable, type InjectableOptions } from '@nestjs/common/decorators/co
 export function UseCase (options?: InjectableOptions): ClassDecorator {
   return Injectable(options)
 }
-
-export function DAO (options?: InjectableOptions): ClassDecorator {
-  return Injectable(options)
-}

@@ -2,7 +2,7 @@ import { type Account } from '../types'
 import { AccountModel } from '../models'
 import { InjectModel } from '@nestjs/sequelize'
 import { v4 as uuid } from 'uuid'
-import { UseCase } from '@avwie/decorators'
+import { UseCase } from '@avwie/architecture'
 
 @UseCase()
 export class CreateAccountUseCase {

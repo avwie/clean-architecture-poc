@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@nestjs/common": "*",
-    "@avwie/decorators": "workspace:*",
+    "@avwie/architecture": "workspace:*",
     "uuid": "*",
     "sequelize-typescript": "*",
     "@nestjs/sequelize": "*",
