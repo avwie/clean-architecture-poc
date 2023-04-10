@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, Post } from '@nestjs/common'
+import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common'
 import { CreateAccountUseCase, GetAccountUseCase, DeleteAccountUseCase } from '../usecases'
 import { type Account } from '../types'
 
@@ -16,8 +16,8 @@ export class AccountController {
     return await this.createAccountUseCase.invoke(account)
   }
 
-  @Get()
-  async getAccount (accountId: Account['id']): Promise<Account> {
+  @Get(':accountId')
+  async getAccount (@Param('accountId') accountId: Account['id']): Promise<Account> {
     return await this.getAccountUseCase.byIdOrFail(accountId)
   }
 

@@ -6,7 +6,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@nestjs/common": "*"
+    "@nestjs/common": "*",
+    "express": "*"
   },
   "scripts": {
     "build": "tsc --project tsconfig.build.json",

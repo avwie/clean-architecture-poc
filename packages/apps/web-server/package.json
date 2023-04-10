@@ -18,6 +18,7 @@
     "@nestjs/platform-express": "*",
     "@avwie/accounts": "workspace:*",
     "@avwie/transactions": "workspace:*",
+    "@avwie/architecture": "workspace:*",
     "reflect-metadata": "*",
     "rxjs": "*",
     "sequelize": "*",
