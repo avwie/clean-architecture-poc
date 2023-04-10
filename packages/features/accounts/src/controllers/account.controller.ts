@@ -1,5 +1,5 @@
-import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common'
-import { CreateAccountUseCase, GetAccountUseCase, DeleteAccountUseCase } from '../usecases'
+import { Body, Controller, Delete, Get, Param, ParseUUIDPipe, Post } from '@nestjs/common'
+import { CreateAccountUseCase, GetAccountUseCase, DeleteAccountUseCase, CreateAccountInput } from '../usecases'
 import { type Account } from '../types'
 
 @Controller('account')
@@ -12,17 +12,17 @@ export class AccountController {
   }
 
   @Post()
-  async createAccount (@Body() account: Omit<Account, 'id'>): Promise<Account> {
+  async createAccount (@Body() account: CreateAccountInput): Promise<Account> {
     return await this.createAccountUseCase.invoke(account)
   }
 
   @Get(':accountId')
-  async getAccount (@Param('accountId') accountId: Account['id']): Promise<Account> {
+  async getAccount (@Param('accountId', ParseUUIDPipe) accountId: Account['id']): Promise<Account> {
     return await this.getAccountUseCase.byIdOrFail(accountId)
   }
 
-  @Delete()
-  async removeAccount (accountId: Account['id']): Promise<number> {
+  @Delete(':accountId')
+  async removeAccount (@Param('accountId', ParseUUIDPipe) accountId: Account['id']): Promise<number> {
     return await this.deleteAccountUseCase.invoke(accountId)
   }
 }

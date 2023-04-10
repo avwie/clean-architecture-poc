@@ -1,5 +1,5 @@
-import { Module } from '@nestjs/common'
-import { APP_FILTER, RouterModule } from '@nestjs/core'
+import { Module, ValidationPipe } from '@nestjs/common'
+import { APP_FILTER, APP_PIPE, RouterModule } from '@nestjs/core'
 import { SequelizeModule } from '@nestjs/sequelize'
 import { routes } from './app.routes'
 import { AccountsModule } from '@avwie/accounts/dist/modules'
@@ -25,6 +25,10 @@ import { FeatureErrorFilter } from '@avwie/architecture/dist/exception.filter'
     {
       provide: APP_FILTER,
       useClass: FeatureErrorFilter
+    },
+    {
+      provide: APP_PIPE,
+      useClass: ValidationPipe
     }
   ]
 })

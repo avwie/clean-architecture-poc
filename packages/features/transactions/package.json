@@ -11,11 +11,7 @@
     "test": "jest --verbose --runInBand"
   },
   "dependencies": {
-    "@nestjs/common": "*",
     "@avwie/architecture": "workspace:*",
-    "uuid": "*",
-    "sequelize-typescript": "*",
-    "@nestjs/sequelize": "*",
     "@avwie/accounts": "workspace:*"
   }
 }

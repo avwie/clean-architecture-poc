@@ -13,27 +13,8 @@
     "test": "jest --verbose --runInBand"
   },
   "dependencies": {
-    "@nestjs/common": "*",
-    "@nestjs/core": "*",
-    "@nestjs/platform-express": "*",
     "@avwie/accounts": "workspace:*",
     "@avwie/transactions": "workspace:*",
-    "@avwie/architecture": "workspace:*",
-    "reflect-metadata": "*",
-    "rxjs": "*",
-    "sequelize": "*",
-    "sequelize-typescript": "*",
-    "@nestjs/sequelize": "*",
-    "pg": "*",
-    "pg-hstore": "*"
-  },
-  "devDependencies": {
-    "@nestjs/cli": "^9.0.0",
-    "@nestjs/schematics": "^9.0.0",
-    "@nestjs/testing": "^9.0.0",
-    "@types/express": "^4.17.13",
-    "@types/node": "*",
-    "typescript": "*",
-    "webpack": "*"
+    "@avwie/architecture": "workspace:*"
   }
 }
